@@ -1,0 +1,43 @@
+
+body{
+    font-family: Verdana,sans-serif,fantasy;
+    background-color: #28324B;
+    color: #ffffff;
+}
+h1{
+    font-family: cursive;
+    color: #ffffff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #666;
+
+}
+h2{
+    font-family: fantasy;
+    color: #F82A79;
+}
+
+h3{
+    background-color: #F29F05;
+    color: #F2F2F2;
+    padding: 5px;
+}
+
+p{
+    line-height: 160%;
+}
+
+a {
+    color: #6b8e23;
+}
+a:hover{
+    color: #cc0000;
+}
+a:visited{
+    color: #000000;
+
+}
+
+#credits{
+    font-style:italic;
+    color: #F82A79;
+}

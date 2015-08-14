@@ -1,0 +1,55 @@
+/*
+CSS Style Sheet
+Week 2 - Intro to CSS
+Nesto Lucio
+*/
+
+body {
+    font-family: sans-serif;
+    width: 800px;
+
+
+}
+#container {
+    border: 1px solid #665544;
+    background-color:#efefef; 
+    padding: 10px;
+}
+
+h1 {
+    color: #ff0000;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+p {
+    color: #000000;
+}
+
+h3{
+    color: #6b8e23;
+}
+
+#container-well {
+    width: 750px;
+    padding: 10px;
+    border: 2px solid #cc0000;
+    background: #ffffff;
+    margin: 5x;
+}
+footer{
+    text-transform: uppercase;
+    font-size: x-small;
+    padding: 30px;
+}
+a {
+    color: #ff0000;
+}
+
+a:hover {
+    color:#6b8e23 ;
+}
+
+em {
+    color: #ff0000;
+
+}
