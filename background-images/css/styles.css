@@ -1,3 +1,6 @@
+
+
+/*Start Main Styles*/
 body{
     margin-left: auto;
     margin-right: auto;
@@ -14,29 +17,9 @@ body{
     /*background: radial-gradient(ellipse at center, rgba(86,160,158,1) 0%,rgba(79,37,15,1) 100%,rgba(32,124,202,1) 100%,rgba(41,137,216,1) 100%,rgba(164,242,48,1) 100%); /!* W3C *!/*/
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56a09e', endColorstr='#a4f230',GradientType=1 ); /!* IE6-9 fallback on horizontal gradient *!/*/
     /*background-repeat: no-repeat;*/
-    
+
 
 }
- #navigation{
-     border-top: 1px solid #ededed;
-     border-bottom: 5px double #ededed;
-     background-color: #ededed;
-     padding: 1% 0;
-
- }
- #navigation li{
-     display: inline;
-     margin: 5%;
- }
- #logo{
-     margin-left: auto;
-     margin-right: auto;
-     padding: 80px auto;
-
-     background-image: url("../images/deadpool.png");
-     background-repeat: no-repeat;
-     background-position: top right;
- }
 h1{
     font-size: 1.5em;
     color:#ff0000;
@@ -48,6 +31,53 @@ h2{
 }
 h3{
     font-size: 1.25em;
+}
+p{
+    color: #ffffff;
+}
+
+
+/*Start Div ID Styles*/
+
+/*Create a new rule to apply a width of 500 pixels to the div named "gallery-content".
+Add 20 pixels of margin to the top and bottom and center the div on the page.*/
+#gallery-content{
+    width: 500px;
+    margin: 20px auto;
+}
+/*Change the divs named "entry" font sizes to be 0.70 times the default.*/
+/*Give the divs named "entry" widths AND heights of 220 pixels and float them so they are next to each other
+but also follow the order of the HTML,
+i.e. Steak, Seafood Pasta, etc.*/
+/*Add 10 pixels of space between each of them.*/
+/*Now add the "shadow.png" image to the background of each div named "entry". Make sure they don't repeat and are positioned at the bottom.*/
+
+.entry{
+    font-size: .70em;
+    width: 220px;
+    height: 220px;
+    float: right;
+    margin: 10px;
+    background-image: url("images/shadow.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+#navigation{
+    border-top: 1px solid #ededed;
+    border-bottom: 5px double #ededed;
+    background-color: #ededed;
+    padding: 1% 0;
+
+}
+#navigation li{
+    display: inline;
+    margin: 5%;
+}
+#logo{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px auto;
 }
 #column1of2{
     width: 45%;
@@ -63,7 +93,7 @@ h3{
 
 }
 #content{
-   width:100%;
+    width:100%;
 }
 #logo{
     background-color: rgba(215, 213, 44, 0.5);
@@ -73,6 +103,34 @@ h3{
     float: left;
     margin-right: 20px;
 }
-p{
-    color: #ffffff;
+
+/*End Div ID Styles*/
+
+/*Figure and image styles*/
+
+/*Give the figure elements widths of 202 pixels and heights of 193 pixels.
+Change the default margin to be zero and add 9 pixels of padding.
+Now add a background color of the hex value #e7e3d8.*/
+figure{
+    width: 202px;
+    height: 193px;
+    margin: 0;
+    padding: 9px;
+    background-color: #e7e3d8;
+}
+/*Give the images inside the figure elements widths of 200 pixels and heights of 150 pixels.es.
+Add a border of 1 pixel wide, solid style, and the border color #8c9c9e.*/
+figure img{
+    width: 200px;
+    height: 150px;
+    border: 1px solid #8c9c9e;
+}
+
+/*Add the "icon.png" image to the background of each figcaption element and make sure they don't repeat.*/
+/*Now add 5 pixels of top padding and 25 pixels of left padding to each figcaption.
+Notice how the left padding moved the caption text out of the way*/
+figcaption{
+    background-image: url("../images/icon.png");
+    background-repeat: no-repeat;
+    padding: 5px 25px;
 }

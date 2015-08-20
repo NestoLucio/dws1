@@ -1,15 +1,21 @@
-body{
-    font-family: Verdana, monospace, cursive,;
-    background-color: #fff;
-    color: #111C00;
 
+@font-face {
+    font-family: Open Sans, sans-serif;
+    src:url(http://fonts.googleapis.com/css?family=Open+Sans);
 }
+body{
+
+    font-family: Open Sans, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff url("../images/background.jpg");
+}
+/*Main Styles - All of main tag styles */
 h1 {
     font-size: 3em;
     color: #ff0000;
-    margin: 3px;
+    margin: 1%;
     text-shadow: 1px 3px #000000;
-
 }
 h2{
     font-size: 2.5em;
@@ -24,47 +30,102 @@ h4{
     font-size: 1em;
     color: #cc0000;
 }
-
+p{
+    line-height: 20px;
+}
+strong {
+    font-weight: 200;
+    font-style: italic;
+    color: #008080;
+}
+/*Ending all main tag styles */
+/*Starting all div id styles*/
 #container{
-    width: 850px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 60%;
+    background: #fff url("../images/deadpool.gif") top left no-repeat;
+    margin: 0 auto;
     padding: 20px 250px 20px 250px;
     border-left: solid #ff0000;
     border-right: solid #ff0000;
-
 }
 #logo {
-    background-color: #ff0000;
+    width: 114px;
+    background:#ff0000;
     color: #ffffff;
     border: 2px;
     border-color: #ffffff;
-    width: 150px;
     padding: 5px;
-    box-shadow: 1px 3px 4px 3p blackx;
-    opacity: 0.5;
+    box-shadow: 1px 3px 4px 3px black;
+    opacity: .5;
     margin-bottom: 1px;
 }
 #small {
     font-size: .5em;
-    margin-top: 1px;
+    margin-top: 3%;
     padding: 0px;
 }
-p{
-    line-height: 20px;
+#container-well{
+    background-color: #FF4D29;
+    color: #ffffff;
+    border-radius: 0 64px;
+    padding: 15px;
+    margin: 4% 0%;
+    box-shadow: 10px 10px 5px #888888;
 }
+#container-well h2{
+    color: #ffffff;
+    margin: 10px;
+}
+/*Create a div column container and column divs*/
+#column{
+    width: 100%;
+    margin: 5% auto;
+    clear: both;
+    overflow: auto;
+    padding: 10px;
+    font-size: 1em;
+}
+#column-1{
+    float: right;
+    width: 30%;
+    margin: 0 8px;
+    padding: 0 5px;
+    border: 1px solid #ff0000;
+    color: #fff;
+    background: linear-gradient(#ff0000, #00008b);
+}
+#column-2{
+    float: right;
+    width: 30%;
+    margin: 0 8px;
+    padding: 0 5px;
+    border: 1px solid #ff0000;
+    color: #fff;
+    background: linear-gradient(#008080, #ff4d29);
+
+}
+#column-3{
+    float: right;
+    width: 30%;
+    margin: 0 8px;
+    padding: 0 5px;
+    border: 1px solid #ff0000;
+    color: #fff;
+    background: radial-gradient(#665544, #000);
+
+}
+/*Ending all div styles*/
+/*Starting all Navigation Styles*/
 nav{
     background-color: #0000ff;
     padding: 4px;
     color: #ffffff;
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 nav li {
     display: inline;
 }
@@ -77,6 +138,8 @@ nav a:hover{
 nav a:active{
     color: #008000;
 }
+/*Ending all navigation styles*/
+/*Starting all anchor (a) styles*/
 a{
     color: #8FCC21;
 }
@@ -86,37 +149,21 @@ a:visited{
 a:hover{
     color: #008000;
 }
-strong{
-    font-weight: 200;
-    font-style: italic;
-    color: #008080;
-}
-#container-well{
-    background-color: #FF4D29;
-    color: #ffffff;
-    border-radius: 0px 64px 0px 63px;
-    padding: 15px;
-    margin: 20px 20px 45px 20px;
-    box-shadow: 10px 10px 5px #888888;
-
-}
-#container-well h2{
-    color: #ffffff;
-    margin: 10px;
-
-}
+/*Ending anchor styles*/
+/*Starting all image base and Image Figure Styles*/
 figure{
-    width: 260px;
-    border: 1px solid;
+    width: 27%;
     padding: 10px;
-    margin: 10px;
-    border-radius: 20px 0px 20px 0px;
-    float: right;
+    margin: 10px 20px;
+    border: 1px solid;
+    border-radius: 20px 0px;
+    float: left;
 }
 figcaption{
     font-size: .5em;
     font-style: italic;
 }
+/*List Items Styles*/
 ul{
     list-style: circle;
 }
@@ -124,3 +171,4 @@ ul li {
     padding-left: 1em;
     margin-bottom: .5em;
 }
+/*Ending image styles*/
